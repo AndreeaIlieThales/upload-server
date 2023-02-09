@@ -1,8 +1,4 @@
-# misc
-.DS_Store
-.env
-
-# IDE related
 .vscode
 node_modules/
 .idea/
+.DS_STORE
