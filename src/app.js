@@ -53,7 +53,7 @@ const handleUpload = async (req, res) => {
 app.post("/upload", handleUpload);
 
 
-const server = app.listen(4000, function () {
+const server = app.listen((process.env.PORT || 4000), function () {
   const port = server.address().port;
   if (!fs.existsSync(path.join(__dirname, './upload'))) {
     fs.mkdir(path.join(__dirname, './upload'), (err) => {
