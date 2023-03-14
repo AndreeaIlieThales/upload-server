@@ -9,7 +9,7 @@ const Errors = require("./Errors");
 const app = express();
 
 //Add the client URL to the CORS policy
-const whitelist = ["http://localhost:6006"];
+const whitelist = ["http://localhost:6006", "https://docs-internal.onegini.com", "https://onewelcome.github.io"];
 const sleep = (millis) => {
   return new Promise(resolve => setTimeout(resolve, millis));
 }
